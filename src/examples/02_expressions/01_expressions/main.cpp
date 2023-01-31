@@ -1,6 +1,8 @@
 #include<iostream>
+#include "expressions.h"
 
-#include std::cout;
+using std::cout;
+using std::cin;
 
 int main()
 {
@@ -13,5 +15,13 @@ int main()
     cin>>num2;
 
     cout<<"Enter value for num3: ";
+    cin>>num3;
+
+    auto result = operator_precedence_1(num1, num2, num3);
+    cout<<"Result is: "<<result<<"\n";
+
+    result = operator_precedence_2(num1, num2, num3);
+    cout<<"Result is: "<<result<<"\n";
+
     return 0;
 }
