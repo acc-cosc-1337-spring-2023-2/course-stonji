@@ -1,15 +1,25 @@
 #include "while.h"
+#include "for.h"
 
 using std::string;
 using std::cin; using std::cout;
 
 int main() 
 {
-	auto num = 0;
-	cout<<"Enter a number: ";
-	cin>>num;
+	auto choice = 'n';
 
-	auto result = num
+	do
+	{
+		auto num = 0;
+		cout<<"Enter a number: ";
+		cin>>num;
+
+		auto result = sum_of_squares(num);
+		cout<<"Sum of squares: "<<result<<"\n";
+
+		cout<<"Enter y to continue...";
+		cin>>choice;
+	} while(choice == 'y' || choice == 'Y');
 
 	//string str = "Hello";
 	//display(str);
