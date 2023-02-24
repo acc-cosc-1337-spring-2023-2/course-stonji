@@ -2,7 +2,6 @@
 
 void val_params(int num)
 {
-    auto num1 = 100;
     num = 20;
 }
 
