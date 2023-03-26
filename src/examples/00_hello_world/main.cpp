@@ -1,4 +1,5 @@
-#include<iostream>
+#include<iostream> //tells c++ to bring in the code that allows us to display to screen
+
 
 int main()
 {
